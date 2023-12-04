@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vacation Checklist</title>
+</head>
+<body>
+    <header class="jumbotron text-center>
+        <h1 class="display-3">Vacation Destination Wishlist</h1>
+        <p class="lead">Found exciting places to visit on your next destionation. Use the form below to add it your wishlist</p>
+    </header>
+
+
+</body>
+
+<main>
+    <section class="form-section">
+        <form class="custom-form" onsubmit="addToWishlist(event)">
+            <div class="form-div">
+                <label for="destination">Destination</label>
+                <input 
+                    type="text"
+                    id="destination"
+                    placeholder="Enter destination..."
+                    required
+                    >
+            </div>
+
+            <div class="form-div">
+                <label for="location">Location</label>
+                <input 
+                    type="text"
+                    id="location
+                    "placeholder="Enter location..."
+                    required
+                    >
+            </div>
+
+            <div class="form-div">
+                <label for="photo">Photo</label>
+                <input 
+                    type="url"
+                    id="photo"
+                    placeholder="URL of photo..."
+                    required
+                    >
+            </div>
+
+            <div class="form-div">
+                <label for="description">Description</label>
+                <input 
+                    type="text"
+                    id="description"
+                    placeholder="Describe your vacation here..."
+                    required
+                    >
+            </div>
+           
+            <button type="submit">Add to wishlist!</button>
+        </form>
+    </section>
+
+    <section class="wishlist">
+        <h1>My Wishlist:</h1>
+        <div class="wishlist-div"></div>
+    </section>
+</main>
+</html>
